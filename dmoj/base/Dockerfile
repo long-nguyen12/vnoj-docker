@@ -19,3 +19,5 @@ COPY repo/package-lock.json .
 RUN npm install && \
     pip3 install -r requirements.txt && \
     pip3 install -r additional_requirements.txt
+RUN pip3 install --upgrade lxml_html_clean
+RUN pip3 install --upgrade openpyxl
